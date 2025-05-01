@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de tarefas :)</title>
+</head>
+<body>
+    <div class="tarefas-card">
+        <div class="tarefas-content">
+            <h1>Lista de tarefas</h1>
+            <form id="task-form" action="/tasks" method="POST">
+                <input type="text" id="title-input" name="task" placeholder="Título da tarefa..." required>
+                <input type="text" id="description-input" name="description" placeholder="Descrição da tarefa..." required>
+                <button type="submit">Adicionar</button>
+            </form>
+
+            <table border="1" class="tarefas-table">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Descrição</th>
+                        <th>Conclúida</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="task-list">
+                    <tr>
+                        <td>Limpar Cachorro</td>
+                        <td>Limpar o cachorro depois do passeio</td>
+                        <td><input type="checkbox" checked></td>
+                        <td>
+                            <button type="button" class="delete-button">Eliminar</button>
+                            <button type="button" class="edit-button">Editar</button>
+                        </td>
+                    </tr>
+                </tbody>
+                </tbody>
+            </table>
+      </div>
+</body>
+</html> 

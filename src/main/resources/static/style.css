@@ -1,0 +1,22 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.tarefas-card{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+}
+
+.tarefas-table{
+    margin: 20px;
+    justify-self: center;
+}
