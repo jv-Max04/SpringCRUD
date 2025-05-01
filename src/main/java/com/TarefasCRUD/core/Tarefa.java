@@ -8,13 +8,11 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Tarefa {
-    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String titulo;
     private String descricao;
-    private boolean concluida;
 
     //* Getters e setters */
     public int getId() {
@@ -39,13 +37,5 @@ public class Tarefa {
     
     public void setTitulo(String titulo) {
         this.titulo = titulo;
-    }
-    
-    public boolean isConcluida() {
-        return concluida;
-    }
-    
-    public void setConcluida(boolean concluida) {
-        this.concluida = concluida;
     }
 }
