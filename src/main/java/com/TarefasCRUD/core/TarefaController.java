@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
 @RequestMapping("/tarefas")
-public class MainController { 
+public class TarefaController { 
     List<Tarefa> tarefas = new ArrayList<>();
 
     @GetMapping
