@@ -22,8 +22,8 @@ function renderizarTarefas(){
             <td>${tarefa.titulo}</td>
             <td>${tarefa.descricao}</td>
             <td>
-                <button class="btn btn-dark" onClick="editarTarefa(${tarefa.id})">Editar</button>
-                <button class="btn btn-danger" onClick="excluirTarefa(${tarefa.id})">Excluir</button>
+                <button class="editar" onClick="editarTarefa(${tarefa.id})">Editar</button>
+                <button class="excluir" onClick="excluirTarefa(${tarefa.id})">Excluir</button>
             </td>
         `;
         corpoTabela.appendChild(linha)
@@ -75,16 +75,14 @@ function editarTarefa(id){
 
 document.getElementById("form").addEventListener("submit", async e => {
     e.preventDefault();
-    if(editandoTarefa){
+    if(!editandoTarefa){
+        await adicionarTarefa();
+        getTarefas(render = true);
+    } else {
         await atualizarTarefa(editandoTarefa);
         editandoTarefa = null;
-        getTarefas();
-    } else {
-       await adicionarTarefa();
-        getTarefas();
-
+        getTarefas(render = true);
     }
-    
     document.getElementById("form").reset();
     document.getElementById("cancel").style.display = "none";
 });

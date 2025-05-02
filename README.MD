@@ -3,7 +3,11 @@
 
 Este é um CRUD simples em Spring Boot que criei para gerenciamento de tarefas.
 
-## 🚀 Funcionalidades (via api ou front-end embutido)
+## 📄 Documentação da API
+
+Acesse o arquivo de documentação da API em API.md
+
+## ⚙️ Funcionalidades (via api ou front-end embutido)
 
 - Criar tarefas
 - Editar tarefas
@@ -18,7 +22,7 @@ Este é um CRUD simples em Spring Boot que criei para gerenciamento de tarefas.
 - HTML, CSS (Bootstrap) e JavaScript
 
 
-## ⚙️ Como Executar o Projeto
+## ▶️ Como Executar o Projeto
 
 ### 1. Clone o repositório
 
@@ -66,7 +70,7 @@ http://localhost/tarefas
 4. Utilize os botões “Editar” e “Excluir” para interagir com as tarefas.
 5. Atuailize a página para testar a persistência das informações.
 
-## 🗃️ Banco de Dados
+## 💾 Banco de Dados
 
 - Banco em memória: H2
 - Console acessível em: `http://localhost/h2`
@@ -77,4 +81,4 @@ http://localhost/tarefas
 
 ## 👤 Autor
 
-Desenvolvido por [Max](https://github.com/jv-Max04).
+Desenvolvido por [João Victor](https://github.com/jv-Max04).

@@ -44,14 +44,15 @@ public class TarefaController {
     @PutMapping("/{id}")
     public Tarefa updateTarefa(@PathVariable int id, @RequestBody Tarefa novaTarefa){
         return repo.findById(id).map(tarefa -> {
-                if(novaTarefa.getTitulo() != null) {tarefa.setTitulo(novaTarefa.getTitulo());}
-                if(novaTarefa.getDescricao() != null) {tarefa.setDescricao(novaTarefa.getDescricao());}
+                if(novaTarefa.getTitulo() != null || !novaTarefa.getTitulo().isEmpty()){tarefa.setTitulo(novaTarefa.getTitulo());}
+                if(novaTarefa.getDescricao() != null || !novaTarefa.getDescricao().isEmpty()){tarefa.setDescricao(novaTarefa.getDescricao());}
                 return repo.save(tarefa);
             }
         ).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Nenhuma tarefa com id " + id + " foi encontrada."));
     }
 
     @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteTarefa(@PathVariable int id) {
         if (repo.existsById(id)) {
             repo.deleteById(id);

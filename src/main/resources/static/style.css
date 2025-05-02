@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.big-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 2rem;
+    padding: 1rem;
+    width: 50rem;
+    height: 39rem;
+
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+form{
+    width: 100%;
+}
+
+.inputs-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+}
+
+.input-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-wrapper label{
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.input-wrapper input{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+#submit{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #52a5ffcf;
+    color: white;
+    cursor: pointer;
+}
+
+#cancel{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #ff6868;
+    color: white;
+    cursor: pointer;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+
+td > button:first-child{
+    background-color: #52a5ffcf;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+td > button:nth-child(2){
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #ff6868;
+}
