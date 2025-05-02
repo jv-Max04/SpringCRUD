@@ -12,22 +12,21 @@
         <div class="inputs-wrapper">
         <div class="input-wrapper">
             <label for="titulo">Título da tarefa:</label>
-            <input type="text" name="titulo" id="titulo">
+            <input type="text" name="titulo" id="titulo" required>
         </div>
 
         <div class="input-wrapper">
             <label for="descricao">Descrição: </label>
-            <input type="text" name="descricao" id="descricao">
+            <input type="text" name="descricao" id="descricao" required>
         </div>
         </div>
 
         <div class="btn-wrapper">
-            <button type="submit"> Enviar </button>
-            <button id="cancel" style="display: none;">Cancelar</button>
+            <button type="button" id="cancel" style="display: none;">Cancelar</button>
+            <button type="submit" id="submit"> Enviar </button> 
         </div>
     </form>
     <table border="1">
-        <caption>Tarefas</caption>
         <thead>
             <tr>
                 <th>Título</th>
